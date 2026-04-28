@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailSafe | Beranda</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts & Icons -->
+    <script src="https://kit.fontawesome.com/4a9ca9b6bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="bg-white sticky top-0 z-50 md:w-full w-screen flex justify-between items-center px-[5%] shadow-lg">
+        <section class="flex items-center gap-6">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="E:\WebGIS\FINAL_PROJECT\assets\logo.webp"
+                alt="logo"
+                width="50"
+                height="50"
+                />
+                <span class="hidden sm:block font-bold tracking-wide">RailSafe</span>
+            </a>
+            
+            <!-- Menu -->
+            <section class="flex gap-6">
+                <a href="#">Beranda</a>
+                <a href="#about">Tentang</a>
+            </section>
+        </section>
+        <!-- Button -->
+        <section class="flex gap-2">
+            <!-- Map Button -->
+            <a href="map.html" class="hidden sm:inline-flex items-center gap-2 rounded-xl border shadow-lg border-brand-600/20 bg-white/80 px-3 py-1 text-brand-800 dark:text-brand-200 hover:shadow-glow">
+                <i class="fa-solid fa-earth-asia faa-bounce animated-hover"></i>
+                Peta
+            </a>
+            <!-- Dev Button -->
+            <a href="dev.html" class="hidden sm:inline-flex items-center gap-2 rounded-xl border shadow-lg border-brand-600/20 bg-white/80 px-3 py-1 text-brand-800 dark:text-brand-200 hover:shadow-glow">
+                <i class="fa-solid fa-user-gear"></i>
+                Pengembang
+            </a>
+        </section>
+    </nav>
+    <!-- Header -->
+    <header id="home" class="w-full h-screen flex flex-col bg-[url(/assets/bg.webp)] bg-cover bg-center text-center items-center justify-center mx-auto max-w-7x1 px-[5%]" data-animate="fade-right" data-delay="0">
+      <h1 class="w-full text-3xl sm:text-4xl lg:text-6xl font-bold text-white">
+        Selamat Datang di RailSafe
+        <h3 class="text-white text-lg">
+          v.1.0 East Java
+        </h3>
+        <h3 class="text-white text-xl">
+          Platform Informasi Jalur Kereta Api untuk Keselamatan Bersama.
+        </h3>
+      </h1>
+      <p class="absolute bottom-0 right-0 p-2 text-white/65">
+        <small>Image by https://unsplash.com/@annoying_salman</small>
+      </p>
+      <h2></h2>
+    </header>
+    <!-- About -->
+    <main id="about" class="relative py-8 sm:py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-center" data-animate="fade-up">Tentang</h2>
+        <p class="mt-2 text-center text-slate-600 dark:text-slate-300" data-animate="fade-up" data-delay="80">
+          Mengapa ini penting untuk Anda ketahui
+        </p>
+
+        <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Subject 1 -->
+          <article class="relative overflow-hidden rounded-3xl border bg-white/80 backdrop-blur-xs p-6 shadow-glass" data-animate="fade-up" data-delay="0">
+            <div class="absolute -right-10 -bottom-10 h-28 w-28 rounded-full bg-blue-900/20 blur-2xl"></div>
+            <div class="flex items-center gap-3">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-900 text-white shadow-glow">
+                <i class="fa-solid fa-house"></i>
+              </div>
+              <h3 class="font-semibold text-lg">Aspek Pengembangan Properti</h3>
+            </div>
+            <p class="text-justify mt-2 text-sm text-slate-600 dark:text-slate-300">
+                Memahami regulasi ruang lingkup jalur kereta api sangat krusial untuk menjamin legalitas lahan, mencegah sengketa aset negara, dan memastikan keselamatan struktur bangunan dari risiko getaran akibat perjalanan maupun perawatan prasarana perkeretaapian.<br><br>
+                Kepatuhan terhadap batas minimal Ruang Milik Jalur KA (Rumija) merupakan langkah mitigasi risiko hukum sekaligus investasi jangka panjang guna menghindari <em>dispute</em>/permasalahan di masa mendatang.
+            </p>
+          </article>
+
+          <!-- Subject 2 -->
+          <article class="relative overflow-hidden rounded-3xl border bg-white/80 backdrop-blur-xs p-6 shadow-glass" data-animate="fade-up" data-delay="120">
+            <div class="absolute -right-10 -bottom-10 h-28 w-28 rounded-full bg-orange-400/20 blur-2xl"></div>
+            <div class="flex items-center gap-3">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-orange-600 text-white shadow-glow">
+                <i class="fa-solid fa-book-bookmark"></i>
+              </div>
+              <h3 class="font-semibold text-lg">Aspek Hukum</h3>
+            </div>
+            <p class="text-justify mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Operasional perkeretaapian memiliki regulasi yang ketat terkait ruang di dalam dan sekitar jalur kereta api
+                dalam menjamin keselamatan perjalanan kereta api, perlindungan aset negara, dan kepastian hukum.
+                Dalam hal pengaturan terkait pengamanan konstruksi jalan rel dan kegiatan penunjang lainnya,
+                regulasi ruang milik jalur (Rumija) menjadi penting untuk dipahami berbagai elemen masyarakat terutama bagi pihak yang memiliki kepentingan di sekitar jalur kereta api;
+                seperti pengembang properti, masyarakat umum, dan pihak terkait lainnya.<br><br>
+              Kesadaran (<em>awareness</em>) dapat dimulai dengan memahami ketentuan dalam peraturan perundang-undangan terkait.
+            </p>
+            <a href="https://peraturan.bpk.go.id/Details/39896" class="mt-4 inline-flex items-center gap-1 text-orange-700 hover:gap-2 transition">
+              <small>Undang-Undang (UU) No. 23 Tahun 2007</small>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://peraturan.bpk.go.id/Details/4982/pp-no-56-tahun-2009" class="mt-4 inline-flex items-center gap-1 text-orange-700 hover:gap-2 transition">
+              <small>Peraturan Pemerintah (PP) No. 56 Tahun 2009</small>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://peraturan.bpk.go.id/Details/147069/permenhub-no-60-tahun-2012" class="mt-4 inline-flex items-center gap-1 text-orange-700 hover:gap-2 transition">
+              <small>Permenhub No. PM.60 Tahun 2012</small>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </article>
+
+          <!-- Peraturan 3 -->
+          <article class="relative overflow-hidden rounded-3xl border bg-white/80 backdrop-blur-xs p-6 shadow-glass" data-animate="fade-up" data-delay="240">
+            <div class="absolute -right-10 -bottom-10 h-28 w-28 rounded-full bg-indigo-400/20 blur-2xl"></div>
+            <div class="flex items-center gap-3">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-glow">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <h3 class="font-semibold text-lg">Aspek Masyarakat</h3>
+            </div>
+            <p class="text-justify mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Memahami batas ruang jalur kereta api adalah kunci keselamatan jiwa dan perlindungan aset pribadi, karena aktivitas atau bangunan yang terlalu dekat dengan prasarana perkeretaapian berisiko tinggi terhadap kecelakaan serta bahaya listrik tegangan tinggi.<br><br>
+              Selain itu, pemahaman ini mencegah masyarakat terjebak dalam praktik transaksi lahan ilegal atau pembangunan hunian tanpa izin yang berisiko bermasalah di kemudian hari.
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="py-6">
+        <section class="mx-auto max-w-7x1 px-4 sm:px-6 lg:px-8">
+            <div class="rounded-full border-0 bg-white/70 backdrop-blur-xs shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4" data-animate="fade-up">
+                <div>
+                    <small>© 2026 Muhammad Hafidh Setiawan. All Rights Reserved.</small> 
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://linkedin.com/in/muhhafidh" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/628974747040?text=Assalamu'alaikum,%20saya%20hendak%20berdiskusi%20dengan%20Anda." target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:karir.hafidh@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
