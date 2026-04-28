@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-sans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailSafe | Pengembang</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Fonts & Icons -->
+    <script src="https://kit.fontawesome.com/4a9ca9b6bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="bg-white sticky top-0 z-50 md:w-full w-screen flex justify-between items-center px-[5%] shadow-lg">
+        <section class="flex items-center gap-6">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="/assets/logo.webp"
+                alt="logo"
+                width="50"
+                height="50"
+                />
+                <span class="hidden sm:block font-bold tracking-wide">RailSafe</span>
+            </a>
+            
+            <!-- Menu -->
+            <section class="flex gap-6">
+                <a href="index.html">Beranda</a>
+                <a href="#feedback">Umpan Balik</a>
+            </section>
+        </section>
+        <!-- Button -->
+        <section class="flex gap-2">
+            <!-- Map Button -->
+            <a href="map.html" class="hidden sm:inline-flex items-center gap-2 rounded-xl border shadow-lg border-brand-600/20 bg-white/80 px-3 py-1 text-brand-800 dark:text-brand-200 hover:shadow-glow">
+                <i class="fa-solid fa-earth-asia faa-bounce animated-hover"></i>
+                Peta
+            </a>
+            <!-- Dev Button -->
+            <a href="dev.html" class="hidden sm:inline-flex items-center gap-2 rounded-xl border shadow-lg border-brand-600/20 bg-white/80 px-3 py-1 text-brand-800 dark:text-brand-200 hover:shadow-glow">
+                <i class="fa-solid fa-user-gear"></i>
+                Pengembang
+            </a>
+        </section>
+    </nav>
+    <!-- About Developer -->
+    <main class="min-h-screen grid grid-cols-1 sm:grid-cols-[24rem_auto] justify-stretch mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Photo Profile -->
+        <section>
+            <div class="w-full h-screen px-6 py-10">
+                <div class="rounded-3xl border-0 w-full bg-white/70 backdrop-blur-xs shadow-xl p-6 sm:p-6 grid grid-rows-[auto_2rem] gap-4">
+                    <div class="rounded-2xl w-full h-90 bg-[url(/assets/profile.webp)] bg-cover bg-center">
+                        <div class="absolute left-12 bottom-24 text-2xl font-semibold text-white">M. Hafidh Setiawan</div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="px-4 font-light items-center text-lg">Analis GIS</div>
+                        <div class="px-4 text-lg items-center text-right">PT KAI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Profile -->
+        <section>
+            <!-- Header -->
+            <header id="profile">
+                <h1 class="text-3xl font-extrabold py-10">Tentang Pengembang</h1>
+                <p class="text-xl font-light text-justify py-2"> Saya memanfaatkan data dan analisis spasial untuk mengoptimalkan perencanaan infrastruktur serta manajemen aset —memadukan keahlian manajemen konstruksi yang dipelajari melalui pendidikan formal dan perangkat lunak spasial.
+                    Di dunia industri, saya mentransformasikan data spasial menjadi wawasan strategis: memastikan optimasi aset yang cerdas, efisiensi pemeliharaan, serta perencanaan proyek yang akurat.
+                    Di luar ranah pengukuran dan pemetaan, saya memiliki passion dalam otomatisasi alur kerja dan analisis data menggunakan SQL, Data Analysis Expressions (DAX), dan Python.
+                    Fokus saya adalah mentransformasi data menjadi keputusan strategis yang meningkatkan aspek keselamatan, efisiensi biaya, serta pengembangan aset properti yang optimal.</p>
+            </header>
+            <section class="py-4">
+                <!-- Skills -->
+                <section id="skills"></section>
+                <!-- Experiences -->
+                <section id="experiences"></section>
+                <!-- Contact -->
+                <section id="contact" class="grid sm:grid-cols-[auto_12rem] justify-stretch gap-3">
+                    <a href="https://github.com/pidhub" target="_blank" class="group rounded-2xl p-4 border bg-white/80 shadow-glass hover:shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                            <div>
+                                <div class="font-extrabold">GitHub</div>
+                                <div class="font-light">@pidhub</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com/m.hfdh" target="_blank" class="group rounded-2xl p-4 border bg-white/80 shadow-glass hover:shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                            <div>
+                                <div class="font-extrabold">Instagram</div>
+                                <div class="font-light">@m.hfdh</div>
+                            </div>
+                        </div>
+                    </a>
+            </section>
+        </section>
+        
+    </main>
+    
+    <!-- Feedback & Suggestions -->
+    <section>
+        <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <section id="feedback" class="rounded-3xl border bg-white/80 backdrop-blur-xs shadow-glass p-6 mt-8 space-y-6 opacity-100" data-animate="fade-up" data-delay="120">
+                <!-- Title -->
+                <div class="flex items-center justify-between gap-3">
+                    <h1 class="text-xl font-bold">Umpan Balik dan Masukan</h1>
+                    <span id="formStatus" class="text-xs px-2 py-1 rounded-lg border hidden"></span>
+                </div>
+                <!-- Form -->
+                <form class="grid gap-4 sm:grid-cols-2 font-light">
+                    <div class="sm:col-span-1">
+                        <label for="nama" class="block text-sm mb-1">Nama</label>
+                        <input type="text" id="namaLengkap" required
+                        class="w-full rounded-xl border bg-white border bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-brand-500"/>
+                    </div>
+                    <div class="sm:col-span-1">
+                        <label for="whatsapp">Nomor Whatsapp</label>
+                        <input
+                        type="text"
+                        id="whatsapp"
+                        placeholder="0812 3456 7890"
+                        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                        class="w-full rounded-xl border bg-white border bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-brand-500"/>
+                    </div>
+                    <div class="sm:col-span-1">
+                        <label for="instansi">Instansi</label>
+                        <input type="text" id="instansi"
+                        class="w-full rounded-xl border bg-white border bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-brand-500"/>
+                    </div>
+                    <div class="sm:col-span-1">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"
+                        class="w-full rounded-xl border bg-white border bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-brand-500"/>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message">Pesan</label>
+                        <textarea
+                        id="message"
+                        placeholder="Beri masukan untuk pengembangan situs menjadi lebih baik"
+                        rows="3"
+                        class="w-full rounded-xl border bg-white border bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+                    </div>
+                    <div class="sm:col-span-2 flex items-center gap-2">
+                        <button
+                        type="submit"
+                        class="inline-flex items-center gap-2 rounded-2xl bg-slate-900 text-white px-5 py-2.5 hover:opacity-90">
+                        <i class="fa-solid fa-paper-plane"></i> Kirim
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+    <!-- Footer -->
+    <footer class="py-6">
+        <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="rounded-full border-0 bg-white/70 backdrop-blur-xs shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4" data-animate="fade-up">
+                <div>
+                    <small>© 2026 Muhammad Hafidh Setiawan. All Rights Reserved.</small> 
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://linkedin.com/in/muhhafidh" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/628974747040?text=Assalamu'alaikum,%20saya%20hendak%20berdiskusi%20dengan%20Anda." target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:karir.hafidh@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
